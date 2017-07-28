@@ -1,0 +1,6 @@
+src/*.pyc
+src/.Rhistory
+src/.RData
+src/.Rproj.user/
+src/*.Rproj
+.vscode/
