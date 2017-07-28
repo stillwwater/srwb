@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 """
-This script reads comments from the top n posts from a subreddit
-and collects the frequency in which words are used.
+This script goes through comments from a subreddit, collects data
+on how frequently words are used and writes the data to a CSV file.
 
 Run the script by passing it the following arguments:
 > srwb.py [username] [subreddit] [# of posts]
