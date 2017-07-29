@@ -62,8 +62,7 @@ class WordBot:
         # Permalink for each child (post)
         [links.append(x["data"]["permalink"]) for x in js["data"]["children"]]
 
-        print("\raquiring permalinks %i%%" %
-              (len(links) / n * 100), end="")
+        print("\raquiring permalinks %i%%" % (len(links) / n * 100), end="")
 
         # Recurse until we have enough links
         if len(links) >= n:
@@ -74,11 +73,8 @@ class WordBot:
 
     def read_posts(self, posts):
         print("\ndownloading posts...")
-        i = 0
 
         for p in tqdm.tqdm(posts):
-            i += 1
-
             js = self.download_json("%s.json" % p)
             # js[0]: Post
             # js[1]: Comments
@@ -88,7 +84,6 @@ class WordBot:
                     args=(js[1]["data"]["children"],))
                 t.start()
                 t.join()
-
         print("\nFinished executing %i threads..." % len(posts))
 
     def to_csv(self, fname):
