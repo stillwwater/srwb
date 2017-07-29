@@ -96,7 +96,7 @@ class WordBot:
         te = self.results["terrors"]
         tw = self.results["twords"]
 
-        print("total: %i comments, errors: %i (%i%% successfull)" %
+        print("total: %i comments, errors: %i (%i%% successful)" %
               (tc, te, (tc - te) / tc * 100))
 
         print("words: %i (unique: %i)" % (tw, len(self.all_words.keys())))
