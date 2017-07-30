@@ -61,10 +61,9 @@ class WordBot:
 
         # Permalink for each child (post)
         [links.append(x["data"]["permalink"]) for x in js["data"]["children"]]
+        print("\racquiring permalinks %i%%" % (len(links) / n * 100), end="")
 
-        print("\raquiring permalinks %i%%" % (len(links) / n * 100), end="")
-
-        # Recurse until we have enough links
+        # Continue until we have enough links
         if len(links) >= n:
             return links
         else:
