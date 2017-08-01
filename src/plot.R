@@ -14,7 +14,7 @@ plt <- ggplot(selected) +
   labs(
     title = "Most popular words in /r/MechanicalKeyboards",
     x     = "",
-    y     = "Frequency"
+    y     = "Count"
   )
 
 print(plt)
