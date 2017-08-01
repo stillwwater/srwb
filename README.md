@@ -15,4 +15,4 @@ A simple python bot that goes through comments from a subreddit (top-alltime pos
 
 ### Result (from plot.R):
 
-![plot](http://i.imgur.com/38tZidv.png)
+![plot](http://i.imgur.com/rCbusIP.png)
